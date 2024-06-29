@@ -1,0 +1,13 @@
+<form [formGroup]="loginForm" (ngSubmit)="loginPress()">
+  <p *ngIf="loginError != ''">{{loginError}}</p>
+  <fieldset>
+    <label for="email-login">Email</label>
+    <input formControlName="email" type="email" id="email-login" autocomplete="username">
+    
+    <label for="password-login">Password</label>
+    <input formControlName="password" type="password" id="password-login" autocomplete="current-password">
+  </fieldset>
+
+  <button type="submit">Login In</button>
+  <a routerLink="/register">Registrar</a>
+</form>
