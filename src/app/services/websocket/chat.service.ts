@@ -2,7 +2,7 @@ import { EventEmitter, Injectable } from '@angular/core';
 import { Socket } from 'ngx-socket-io';
 import { Message } from 'src/@models/message.model';
 
-const URL_WEBSOCKET: string = 'ws://localhost:8040';
+const URL_WEBSOCKET: string = 'ws://apitest.madcat.one:8040';
 
 @Injectable({
   providedIn: 'root'
